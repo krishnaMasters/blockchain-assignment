@@ -113,5 +113,4 @@ contract Tracking {
     function getAllTransactions() public view returns (TypeShipment[] memory) {
         return typeShipments;
     }
-
 }
