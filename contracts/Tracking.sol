@@ -36,8 +36,8 @@ contract Tracking {
     event ShipmentDelivered(address indexed sender, address indexed receiver, uint256 deliveryTime);
     event ShipmentPaid(address indexed sender, address indexed receiver, uint256 amount);
 
-    constructor() {
-        shipmentCount = 0;
+    constructor() { 
+        shipmentCount = 0; 
     }
 
     function createShipment(address _receiver, uint256 _pickupTime, uint256 _distance, uint256 _price) public payable {
