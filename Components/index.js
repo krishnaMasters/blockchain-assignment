@@ -24,6 +24,7 @@ export {
     Profile,
     Services,
     StartShipment,
+    Table,
     Nav1,
     Nav2,
     Nav3,
