@@ -36,10 +36,11 @@ export default () => {
             </ul>
           </div>
 
-          <div className="mt-10 py-10 border-t md: text-center">
+
+        </div>
+        <div className="mt-10 py-10 border-t md: text-center">
             <p>© 2024 Raksha. All rights reserved.</p>
           </div>
-        </div>
       </div>
     </footer>
   );
