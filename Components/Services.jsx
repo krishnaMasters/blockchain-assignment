@@ -5,8 +5,8 @@ export default ({
   setOpenProfile,
   setCompleteModal,
   setGetModel,
-  setStartModal,
-}) => {
+  setStartModel,
+}) => {  
   const team = [
     {
       avatar: images.compShipment,
@@ -33,7 +33,7 @@ export default ({
     } else if (text === 2) {
       setGetModel(true);
     } else if (text === 3) {
-      setStartModal(true);
+      setStartModel(true);
     } else if (text === 4) {
       setOpenProfile(true);
     }
