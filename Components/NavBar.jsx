@@ -32,11 +32,12 @@ export default () => {
                 <div className="flex items-center justify-between py-5 md:block">
                     <a href="#">
                         <img
-                            src="https://www.floatui.com/logo.svg"
-                            width={120}
-                            height={50}
+                            src="https://cdn-icons-png.flaticon.com/512/4249/4249179.png"
+                            width={40}
                             alt="Float UI Logo"
+                            className="mx-auto"
                         />
+                        <b>ChainXpert</b>
                     </a>
                     <div className="md:hidden">
                         <button
