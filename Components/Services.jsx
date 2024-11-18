@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export default ({
   setOpenProfile,
-  setCompleteModal,
+  setCompleteModel,
   setGetModel,
   setStartModel,
-}) => {  
+}) => {
   const team = [
     {
       avatar: images.compShipment,
@@ -29,7 +29,7 @@ export default ({
   ];
   const openModelBox = (text) => {
     if (text === 1) {
-      setCompleteModal(true);
+      setCompleteModel(true);
     } else if (text === 2) {
       setGetModel(true);
     } else if (text === 3) {
@@ -51,7 +51,7 @@ export default ({
                 >
                   <Image
                     src={item.avatar}
-                    className="w-full h-full object-cover object-center shadow-mdrounded-xl"alt=""/>
+                    className="w-full h-full object-cover object-center shadow-mdrounded-xl" alt="" />
                 </div>
               </li>
             ))}

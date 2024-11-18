@@ -2,29 +2,29 @@
 import { useState } from "react";
 import { Str1 } from "../Components/index";
 
-export default ({ startModal, setStartModal, startShipment }) => {
+export default ({ startModel, setStartModel, startShipment }) => {
     const [getProduct, setGetProduct] = useState({
         receiver: "",
         index: "",
     });
 
-    const StartShipping = () => {
+    const startShipping = () => {
         console.log("StartShipping triggered", getProduct);
         startShipment(getProduct);
     };
 
-    return startModal ? (
+    return startModel ? (
         <div className="fixed inset-0 z-10 overflow-y-auto">
             <div
                 className="fixed inset-0 w-full h-full bg-black opacity-40"
-                onClick={() => setStartModal(false)} // Corrected setStartModal
+                onClick={() => setStartModel(false)} // Corrected setStartModel
             ></div>
             <div className="flex items-center min-h-screen px-4 py-8">
                 <div className="relative w-full max-w-lg p-4 mx-auto bg-white rounded-md shadow-lg">
                     <div className="flex justify-end">
                         <button
                             className="p-2 text-gray-400 rounded-md hover:bg-gray-100"
-                            onClick={() => setStartModal(false)} // Corrected setStartModal
+                            onClick={() => setStartModel(false)} // Corrected setStartModel
                         >
                             <Str1 />
                         </button>
@@ -59,7 +59,7 @@ export default ({ startModal, setStartModal, startShipment }) => {
                                 />
                             </div>
                             <button
-                                onClick={StartShipping}
+                                onClick={() => startShipping()}
                                 className="block w-full mt-3 py-3 px-4 font-medium text-sm text-center text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 rounded-lg ring-offset-2 ring-indigo-600 focus:ring-2"
                             >
                                 Get details
@@ -69,5 +69,5 @@ export default ({ startModal, setStartModal, startShipment }) => {
                 </div>
             </div>
         </div>
-    ) : null;
+    ) : ("");
 };
